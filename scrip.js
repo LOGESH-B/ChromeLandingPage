@@ -5,11 +5,13 @@ async function featchdata() {
     lsdata = lsdata == null ? [] : lsdata
     let ele = ""
     lsdata.forEach(element => {
-        ele += `<li><a href='${element.url}' ><div class="qlink" style="background-image: url('${element.img}');" tooltip="${element.title}"></div></a></li>`
+        ele += `<li class='items' ><a href='${element.url}' ><div class="qlink" style="background-image: url('${element.img}');"
+         ></div><p>${element.title}</p></a></li>`
     });
     ele += '<li><div class=" qlink-add" onclick="addfunc()">+</div></li>'
     document.getElementsByTagName("ul")[0].innerHTML = ele
 }
+
 document.getElementById("form").addEventListener("submit", (e) => {
     e.preventDefault();
     window.location.href = `https://www.google.com/search?q=${document.getElementById('input').value}`;
