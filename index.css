@@ -73,29 +73,14 @@ li {
     list-style: none;
     border-bottom: 1.5px solid transparent;
     border-width: 2.5px;
-}
 
-li {
-    color: white;
-    cursor: pointer;
-    /* Add cursor: pointer to indicate it's clickable */
-}
 
-li p {
-    position: absolute;
-    top: 40px;
-    opacity: 0;
-    color: white;
-    transition: .5s;
-}
-
-li:hover p {
-    opacity: 1;
 }
 
 li:hover {
     border-bottom: 1.5px solid white;
     border-width: 2.5px;
+
 }
 
 .qul {
@@ -149,7 +134,7 @@ li:last-child:hover {
 }
 
 .qlink:hover {
-    top: -30px;
+    top: -10px;
 
     cursor: pointer;
     margin-inline: 5px;
