@@ -14,10 +14,12 @@ body {
 
 .center-div {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center; 
     flex-wrap: wrap;
     align-content: center !important;
     height: 100vh;
+    flex-direction: column;
 }
 
 .search {
@@ -181,4 +183,23 @@ li:last-child:hover {
 .addform>form>input::placeholder {
     letter-spacing: 2px;
     padding-left: 3px;
+}
+
+.systemDateTime {
+    position: absolute;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    text-shadow: 8px 5px 6px #000, 1px 1px 5px #000;
+    color: #FFF;
+    margin-bottom: 300px;
+}
+
+.systemTime {
+    font-size: 50px; 
+}
+
+.systemDate {
+    font-size: 45px; 
 }
