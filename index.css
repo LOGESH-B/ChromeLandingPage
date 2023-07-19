@@ -14,7 +14,8 @@ body {
 
 .center-div {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center; 
     flex-wrap: wrap;
     align-content: center !important;
     height: 100vh;
@@ -185,13 +186,14 @@ li:last-child:hover {
 }
 
 .systemDateTime {
+    position: absolute;
     display: flex; 
     justify-content: center; 
     align-items: center; 
     flex-direction: column; 
     text-shadow: 8px 5px 6px #000, 1px 1px 5px #000;
     color: #FFF;
-    height: 50vh;;
+    margin-bottom: 300px;
 }
 
 .systemTime {
