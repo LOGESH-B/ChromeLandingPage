@@ -9,6 +9,7 @@ async function featchdata() {
     });
     ele += '<li><div class=" qlink-add" onclick="addfunc()">+</div></li>'
     document.getElementsByTagName("ul")[0].innerHTML = ele
+    patchDateTime();
 }
 document.getElementById("form").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -38,3 +39,20 @@ document.getElementById("form1").addEventListener("submit", async (e) => {
     location.reload()
 
 })
+
+function patchDateTime() {
+    const everyMinute = 1000*60;
+    performPatchDateTime();
+    setInterval(() => {
+        performPatchDateTime();
+    }, everyMinute);
+}
+
+function performPatchDateTime() {
+        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        const monthNames = ["January", "February", "March", "April", "May", "June",
+                        "July", "August", "September", "October", "November", "December"];
+        const date = new Date();
+        document.getElementById("systemTime").innerText = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}`;
+        document.getElementById("systemDate").innerText = `${('0' + date.getDate()).slice(-2)}, ${monthNames[date.getMonth()]} ${days[date.getDay()]}`;
+}
