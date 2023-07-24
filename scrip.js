@@ -61,7 +61,10 @@ function performPatchDateTime() {
             if(date.getHours() == 0) {
                 document.getElementById("systemTime").innerText = `${('0' + (date.getHours() + 12)).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} AM`;
             }
-            else if (date.getHours() >= 14) {
+            else if (date.getHours() == 12) {
+                document.getElementById("systemTime").innerText = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} PM`;
+            }
+            else if (date.getHours() >= 13) {
                 document.getElementById("systemTime").innerText = `${('0' + (date.getHours() - 12)).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} PM`;
             }
             else {
