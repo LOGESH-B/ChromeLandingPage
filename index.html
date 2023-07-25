@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wlcome to World OF Dev</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
     <div class="outerdiv">
-        <div class="center-div">
-            <div class="systemDateTime">
-                <div class="systemTime" id="systemTime"></div>
-                <div class="systemDate" id="systemDate"></div>
-            </div>
-            <form id="form">
-                <input class="search" width="200" type="text" id="input" placeholder="Search" name="search"
-                    autocomplete="off" />
-            </form>
+      <div class="center-div">
+        <div class="systemDateTime">
+          <div class="systemTime" id="systemTime"></div>
+          <div class="systemDate" id="systemDate"></div>
         </div>
-        <div class="botom">
-            <ul class="qul">
-                
-                
-            </ul>
-        </div>
-        <div class="addform" id="addform" style="display: none;">
-            <form id="form1">
-                <input type="text" placeholder="Title" name="title" id="title" autocomplete="off">
-                <input type="text" placeholder="Image Link" name="img" id="img" autocomplete="off">
-                <input type="text" placeholder="Site Link" name="link" id="link" autocomplete="off">
-                <button type="submit">Add</button>
-            </form>
-        </div>
-        <button id="swap-button" type="button" onclick="swapTimeFormat()">
-            <img src="./swap.svg" width="25" height="25" style="color: white;" />
-        </button>
+        <form id="form">
+          <input
+            class="search"
+            width="200"
+            type="text"
+            id="input"
+            placeholder="Search"
+            name="search"
+            autocomplete="off"
+          />
+        </form>
+      </div>
+      <div class="botom">
+        <ul class="qul"></ul>
+      </div>
+      <div class="addform" id="addform" style="display: none">
+        <form id="form1">
+          <input
+            type="text"
+            placeholder="Title"
+            name="title"
+            id="title"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            placeholder="Image Link"
+            name="img"
+            id="img"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            placeholder="Site Link"
+            name="link"
+            id="link"
+            autocomplete="off"
+          />
+          <button type="submit">Add</button>
+        </form>
+      </div>
+      <button id="swap-button" type="button" onclick="swapTimeFormat()">
+        <img src="./swap.svg" width="25" height="" style="color: white" />
+      </button>
     </div>
     <script src="scrip.js"></script>
-</body>
+  </body>
 </html>

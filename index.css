@@ -138,7 +138,7 @@ li:last-child:hover {
 .addform {
   position: absolute;
   bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .addform > form {
@@ -195,4 +195,14 @@ li:last-child:hover {
 
 .systemDate {
   font-size: 45px;
+}
+
+#swap-button {
+  background-color: transparent;
+  border: none;
+  height: fit-content;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
 }
