@@ -203,3 +203,13 @@ li:last-child:hover {
 .systemDate {
     font-size: 45px; 
 }
+
+#swap-button {
+    background-color: transparent;
+    border: none;
+    height: fit-content;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
