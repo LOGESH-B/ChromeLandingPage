@@ -1,205 +1,198 @@
 body {
-    background-image: url('./bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow-y: hidden;
+  background-image: url("./bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow-y: hidden;
 }
 
 .outerdiv {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .center-div {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;
-    align-content: center !important;
-    height: 100vh;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center !important;
+  height: 100vh;
+  flex-direction: column;
 }
 
 .search {
-    width: 50vw;
-    height: 7vh;
-    padding: 0%;
-    font-size: large;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    border-radius: 12px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    border-bottom: 1px solid white;
-    padding-left: 3px;
-    color: white;
-
+  width: 50vw;
+  height: 7vh;
+  padding: 0%;
+  font-size: large;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 12px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid white;
+  padding-left: 3px;
+  color: white;
 }
 
 .search:focus {
-    outline: none;
-    box-shadow: rgba(0, 0, 0, 0.80) 0px 22px 70px 4px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 22px 70px 4px;
 }
 
 .search::placeholder {
-    color: white;
-    letter-spacing: 2px;
-    padding-left: 3px;
+  color: white;
+  letter-spacing: 2px;
+  padding-left: 3px;
 }
 
 .botom {
-    width: 75vw;
-    height: 3vh;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 25px;
-    border-top: 0px;
-    border-left: 0px;
-    border-right: 0px;
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    border-bottom: 2px solid white;
+  width: 75vw;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 25px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-bottom: 2px solid white;
 }
 
-.botom>ul {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+.botom > ul {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  bottom: 800px;
 }
 
 li {
-    list-style: none;
-    border-bottom: 1.5px solid transparent;
-    border-width: 2.5px;
-
-
+  list-style: none;
+  border-bottom: 1.5px solid transparent;
+  border-width: 2.5px;
 }
 
 li:hover {
-    border-bottom: 1.5px solid white;
-    border-width: 2.5px;
-
+  border-bottom: 1.5px solid white;
+  border-width: 2.5px;
 }
 
 .qul {
-    position: absolute;
-    bottom: 5px;
-    margin-bottom: 0%;
-
+  position: absolute;
+  bottom: 5px;
+  margin-bottom: 0%;
 }
 
 .qlink {
-    width: 3.5vw;
-    height: 7.25vh;
-    margin: 5px;
+  width: 3.5vw;
+  height: 7.25vh;
+  margin: 5px;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    top: 0;
-    transition: top ease 0.5s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
 }
 
 .qlink-add {
-
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    color: white;
-    font-size: xx-large;
-    transition: none;
-    padding: 8px;
-    border-radius: 20px;
-
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: xx-large;
+  transition: none;
+  padding: 8px;
+  border-radius: 20px;
 }
 
 .qlink-add:hover {
-    background-color: rgba(128, 128, 128, 0.218);
-
+  background-color: rgba(128, 128, 128, 0.218);
 }
 
 li:last-child,
 li:last-child:hover {
-    display: flex;
-    text-align: center;
-    border: 0px;
-    cursor: pointer;
-    padding: 8px;
+  display: flex;
+  text-align: center;
+  border: 0px;
+  cursor: pointer;
+  padding: 8px;
 
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .qlink:hover {
-    top: -10px;
+  top: -10px;
 
-    cursor: pointer;
-    margin-inline: 5px;
+  cursor: pointer;
+  margin-inline: 5px;
 }
 
 .addform {
-    position: absolute;
-    top: 25px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 60px;
 }
 
-.addform>form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 25vw;
+.addform > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25vw;
 }
 
-.addform>form>input,
-.addform>form>button {
-
-    height: 30px;
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    border: 0px;
-    z-index: 2px;
-    outline: none;
-    box-shadow: rgba(0, 0, 0, 1) 0px 22px 70px 4px;
+.addform > form > input,
+.addform > form > button {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 0px;
+  z-index: 2px;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 1) 0px 22px 70px 4px;
 }
 
-.addform>form>button {
-    width: 50%;
-    cursor: pointer;
-    height: 40px;
-    font-size: medium;
-    font-weight: bold;
+.addform > form > button {
+  width: 50%;
+  cursor: pointer;
+  height: 40px;
+  font-size: medium;
+  font-weight: bold;
 }
 
-.addform>form>button:hover {
-    background-color: black;
-    color: white;
+.addform > form > button:hover {
+  background-color: black;
+  color: white;
 }
 
-.addform>form>input::placeholder {
-    letter-spacing: 2px;
-    padding-left: 3px;
+.addform > form > input::placeholder {
+  letter-spacing: 2px;
+  padding-left: 3px;
 }
 
 .systemDateTime {
-    position: absolute;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    flex-direction: column; 
-    text-shadow: 8px 5px 6px #000, 1px 1px 5px #000;
-    color: #FFF;
-    margin-bottom: 300px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-shadow: 8px 5px 6px #000, 1px 1px 5px #000;
+  color: #fff;
+  margin-bottom: 300px;
 }
 
 .systemTime {
-    font-size: 50px; 
+  font-size: 50px;
 }
 
 .systemDate {
-    font-size: 45px; 
+  font-size: 45px;
 }
