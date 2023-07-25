@@ -136,7 +136,8 @@ li:last-child:hover {
 
 .addform {
   position: absolute;
-  margin-top: 30px;
+  bottom: 0;
+  margin-bottom: 60px;
 }
 
 .addform > form {
