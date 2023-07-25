@@ -40,6 +40,8 @@ document.getElementById("form1").addEventListener("submit", async (e) => {
 
 })
 
+let timeFormat = "railway";
+
 function patchDateTime() {
     const everyMinute = 1000*60;
     performPatchDateTime();
@@ -53,6 +55,34 @@ function performPatchDateTime() {
         const monthNames = ["January", "February", "March", "April", "May", "June",
                         "July", "August", "September", "October", "November", "December"];
         const date = new Date();
-        document.getElementById("systemTime").innerText = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}`;
+
+        if(timeFormat == "standard") {
+            console.log(date.getHours())
+            if(date.getHours() == 0) {
+                document.getElementById("systemTime").innerText = `${('0' + (date.getHours() + 12)).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} AM`;
+            }
+            else if (date.getHours() == 12) {
+                document.getElementById("systemTime").innerText = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} PM`;
+            }
+            else if (date.getHours() >= 13) {
+                document.getElementById("systemTime").innerText = `${('0' + (date.getHours() - 12)).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} PM`;
+            }
+            else {
+                document.getElementById("systemTime").innerText = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} AM`;
+            }
+        }
+        else {
+            document.getElementById("systemTime").innerText = `${('0' + date.getHours()).slice(-2)}:${('0' + date.getMinutes()).slice(-2)}`;
+        }
         document.getElementById("systemDate").innerText = `${('0' + date.getDate()).slice(-2)}, ${monthNames[date.getMonth()]} ${days[date.getDay()]}`;
+}
+
+function swapTimeFormat() {
+    if(timeFormat == "standard") {
+        timeFormat = "railway"
+    }
+    else {
+        timeFormat = "standard"
+    }
+    patchDateTime();
 }
