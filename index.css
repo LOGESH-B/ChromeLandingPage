@@ -68,9 +68,8 @@ body {
   display: flex;
   justify-content: end;
   width: 100%;
-  margin-bottom: 85vh;
+  bottom: 85vh;
 }
-
 li {
   list-style: none;
   border-bottom: 1.5px solid transparent;
@@ -136,8 +135,6 @@ li:last-child:hover {
 
 .addform {
   position: absolute;
-  bottom: 0;
-  margin-bottom: 60px;
 }
 
 .addform > form {
