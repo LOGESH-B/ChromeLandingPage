@@ -221,3 +221,9 @@ li:last-child:hover {
     top: 10px;
     cursor: pointer;
 }
+
+#search-engine-icon {
+    position: relative;
+    top: 20px;
+    right: 10px;
+}
