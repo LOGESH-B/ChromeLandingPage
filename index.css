@@ -213,3 +213,11 @@ li:last-child:hover {
     right: 30px;
     cursor: pointer;
 }
+
+#swap-search-engine {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+}
