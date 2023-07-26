@@ -213,3 +213,9 @@ li:last-child:hover {
     right: 30px;
     cursor: pointer;
 }
+
+.box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
