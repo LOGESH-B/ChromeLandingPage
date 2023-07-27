@@ -97,8 +97,10 @@ function swapTimeFormat() {
 function swapSearchEngine() {
     if(searchEngine == "google") {
         searchEngine = "bing"
+        document.getElementById("search-engine-icon").src="./bing-icon.svg";
     }
     else {
         searchEngine = "google"
+        document.getElementById("search-engine-icon").src="./google-icon.svg";
     }
 }
