@@ -11,9 +11,17 @@ async function featchdata() {
     document.getElementsByTagName("ul")[0].innerHTML = ele
     patchDateTime();
 }
+
+let searchEngine = "google";
+
 document.getElementById("form").addEventListener("submit", (e) => {
     e.preventDefault();
-    window.location.href = `https://www.google.com/search?q=${document.getElementById('input').value}`;
+    if(searchEngine == "google") {
+        window.location.href = `https://www.google.com/search?q=${document.getElementById('input').value}`;
+    }
+    else {
+        window.location.href = `https://www.bing.com/search?q=${document.getElementById('input').value}`;
+    }
 })
 const addfunc = () => {
     formdis = !formdis;
@@ -57,7 +65,6 @@ function performPatchDateTime() {
         const date = new Date();
 
         if(timeFormat == "standard") {
-            console.log(date.getHours())
             if(date.getHours() == 0) {
                 document.getElementById("systemTime").innerText = `${('0' + (date.getHours() + 12)).slice(-2)}:${('0' + date.getMinutes()).slice(-2)} AM`;
             }
@@ -85,4 +92,13 @@ function swapTimeFormat() {
         timeFormat = "standard"
     }
     patchDateTime();
+}
+
+function swapSearchEngine() {
+    if(searchEngine == "google") {
+        searchEngine = "bing"
+    }
+    else {
+        searchEngine = "google"
+    }
 }
