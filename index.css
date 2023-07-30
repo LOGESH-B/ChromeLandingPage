@@ -227,3 +227,11 @@ li:last-child:hover {
     top: 20px;
     right: 10px;
 }
+
+.github-button {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
