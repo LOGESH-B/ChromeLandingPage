@@ -214,9 +214,10 @@ li:last-child:hover {
     cursor: pointer;
 }
 
-.box {
-    margin-bottom: 5px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+.githubButton {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
 }
